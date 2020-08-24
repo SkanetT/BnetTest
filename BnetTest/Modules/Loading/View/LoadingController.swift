@@ -14,13 +14,14 @@ class LoadingController: SpinnerController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.attach(self)
-        presenter?.viewDidLoad()
+        presenter?.attach()
         showSpinner()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.viewDidAppear()
     }
 
 }
 
-extension LoadingController: LoadingPresenterOutput {
-    
-}

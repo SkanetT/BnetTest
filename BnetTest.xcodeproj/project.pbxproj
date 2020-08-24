@@ -60,7 +60,6 @@
 		3A18721F24F2CCB100B505FF /* LoadingAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18721E24F2CCB100B505FF /* LoadingAssembler.swift */; };
 		3A18722224F2CFA600B505FF /* LoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722124F2CFA600B505FF /* LoadingPresenter.swift */; };
 		3A18722424F2CFD100B505FF /* LoadingPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722324F2CFD100B505FF /* LoadingPresenterInput.swift */; };
-		3A18722624F2D01100B505FF /* LoadingPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722524F2D01100B505FF /* LoadingPresenterOutput.swift */; };
 		3A18722924F2DEF700B505FF /* LoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722824F2DEF700B505FF /* LoadingInteractor.swift */; };
 		3A18722B24F2DF1C00B505FF /* LoadingInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722A24F2DF1C00B505FF /* LoadingInteractorInput.swift */; };
 		3A18722D24F2DF8900B505FF /* LoadingInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18722C24F2DF8900B505FF /* LoadingInteractorOutput.swift */; };
@@ -125,7 +124,6 @@
 		3A18721E24F2CCB100B505FF /* LoadingAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAssembler.swift; sourceTree = "<group>"; };
 		3A18722124F2CFA600B505FF /* LoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenter.swift; sourceTree = "<group>"; };
 		3A18722324F2CFD100B505FF /* LoadingPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenterInput.swift; sourceTree = "<group>"; };
-		3A18722524F2D01100B505FF /* LoadingPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPresenterOutput.swift; sourceTree = "<group>"; };
 		3A18722824F2DEF700B505FF /* LoadingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingInteractor.swift; sourceTree = "<group>"; };
 		3A18722A24F2DF1C00B505FF /* LoadingInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingInteractorInput.swift; sourceTree = "<group>"; };
 		3A18722C24F2DF8900B505FF /* LoadingInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingInteractorOutput.swift; sourceTree = "<group>"; };
@@ -413,7 +411,6 @@
 			children = (
 				3A18722124F2CFA600B505FF /* LoadingPresenter.swift */,
 				3A18722324F2CFD100B505FF /* LoadingPresenterInput.swift */,
-				3A18722524F2D01100B505FF /* LoadingPresenterOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -526,7 +523,6 @@
 				3A1871E224EED1B800B505FF /* EntryAddInteractorOutput.swift in Sources */,
 				3A1871D524EE8A9900B505FF /* EntryAddPresenterOutput.swift in Sources */,
 				3A18720324F1698500B505FF /* AdditionData.swift in Sources */,
-				3A18722624F2D01100B505FF /* LoadingPresenterOutput.swift in Sources */,
 				3A18720724F18B3B00B505FF /* EntryViewingController.swift in Sources */,
 				3A18721D24F2CB3700B505FF /* LoadingController.swift in Sources */,
 				3A18720E24F1917700B505FF /* EntryViewingPresenterInput.swift in Sources */,

@@ -40,7 +40,6 @@ class EntyListCell: UITableViewCell {
                 text.removeLast()
             }
             text += " ..."
-            
             entryLabel.text = text
         }
     }

@@ -41,7 +41,6 @@ class EntryListPresenter: EntryListPresenterInput {
     func addEntryTap() {
         router.presentEntryAdd()
     }
-    
 }
 
 extension EntryListPresenter: EntryListInteractorOutput {

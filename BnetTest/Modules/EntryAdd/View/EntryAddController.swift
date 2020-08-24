@@ -26,6 +26,11 @@ class EntryAddController: UIViewController, UITextViewDelegate {
         textView.becomeFirstResponder()
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        textView.resignFirstResponder()
+    }
+    
+    
     func textViewDidChange(_ textView: UITextView) {
         if textView.text.isEmpty {
             navigationItem.rightBarButtonItem?.isEnabled = false
@@ -45,6 +50,7 @@ class EntryAddController: UIViewController, UITextViewDelegate {
     }
     
     private func setupTextView() {
+        textView.autocorrectionType = .no
         textView.backgroundColor = .white
         textView.font = UIFont.systemFont(ofSize: 18)
         textView.delegate = self

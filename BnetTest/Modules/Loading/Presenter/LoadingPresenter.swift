@@ -10,7 +10,6 @@ import Foundation
 
 class LoadingPresenter: LoadingPresenterInput {
     
-    private weak var viewController: LoadingPresenterOutput?
     
     private let interactor: LoadingInteractorInput
     private let router: LoadingRouting
@@ -20,12 +19,11 @@ class LoadingPresenter: LoadingPresenterInput {
         self.router = router
     }
     
-    func attach(_ viewController: LoadingPresenterOutput) {
-        self.viewController = viewController
+    func attach() {
         interactor.attach(self)
     }
     
-    func viewDidLoad() {
+    func viewDidAppear() {
         interactor.isFirstRunning()
         router.setError() {[weak self] () in
             self?.interactor.isFirstRunning()

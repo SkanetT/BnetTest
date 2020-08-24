@@ -20,7 +20,6 @@ class EntryListController: SpinnerController {
         presenter?.attach(self)
         presenter?.viewDidLoad()
         tableHandler?.attach(tableView)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

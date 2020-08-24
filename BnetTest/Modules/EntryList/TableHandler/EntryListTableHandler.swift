@@ -20,7 +20,6 @@ class EntryListTableHandler: NSObject, EntryListTableHandlerProtocol {
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib(nibName: "EntyListCell", bundle: nil), forCellReuseIdentifier: "EntyListCell")
     }
     
@@ -34,8 +33,6 @@ class EntryListTableHandler: NSObject, EntryListTableHandlerProtocol {
     func setAction(userSelect: ((String) -> ())?) {
         self.userSelectCell = userSelect
     }
-    
-    
 }
 
 extension EntryListTableHandler: UITableViewDelegate, UITableViewDataSource {
@@ -50,7 +47,6 @@ extension EntryListTableHandler: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         userSelectCell?(data[indexPath.row].body)
     }
@@ -58,7 +54,6 @@ extension EntryListTableHandler: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
     }
-    
 }
 
 

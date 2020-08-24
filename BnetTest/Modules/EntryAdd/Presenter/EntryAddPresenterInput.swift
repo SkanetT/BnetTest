@@ -12,5 +12,4 @@ protocol EntryAddPresenterInput: class {
     func attach(_ viewController: EntryAddPresenterOutput)
     func cancleButtonTap()
     func saveButtonTap(text: String)
-
 }

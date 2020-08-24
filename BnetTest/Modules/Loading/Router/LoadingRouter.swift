@@ -23,8 +23,6 @@ class LoadingRouter: LoadingRouting {
         DispatchQueue.main.async {
             let vc = EntryListAssembler.createModule()
             let nc = UINavigationController(rootViewController: vc)
-            nc.modalPresentationStyle = .fullScreen
-            //  self.viewController?.present(nc, animated: true)
             UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController = nc
         }
     }
